@@ -88,6 +88,7 @@ public class AlsaCardViewer extends JFrame
     getContentPane().add (buttonPanel, BorderLayout.SOUTH);
     
     //setSize(300,300);
+    setLocationByPlatform (true);
     }
 
 /*=========================================================================

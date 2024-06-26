@@ -91,6 +91,12 @@ because it looks nicer than any of the alternatives available in Linux.
 If this fails, it should not stop the program working, but it might be
 quite ugly.
 
+Screen position of the program's GUI window is left to the window manager. 
+However, there's no way in Java to control where the warning dialog boxes
+go. In a dual-monitor set-up, you could have the main window on one monitor,
+and dialog boxes on another. Java Swing data from before a time when we
+routinely used multiple monitors.
+
 Fonts are likely to be quite small, on high-definition screens. Sorry, but
 this isnt easy to fix in a Java Swing program -- not in a way that works
 on different Linux desktops, anyway.
