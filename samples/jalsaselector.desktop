@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ALSA Selector
+GenericName=ALSA Selector
+Comment=Select default ALSA device
+Keywords=audio,ALSA
+Icon=jalsaselector
+Type=Application
+Categories=Multimedia
+Exec=jalsaselector %F
+StartupNotify=false
+Terminal=false
+
