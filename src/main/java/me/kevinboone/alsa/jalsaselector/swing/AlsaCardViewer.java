@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import java.net.URL;
 import java.util.regex.*;
 
 public class AlsaCardViewer extends JFrame 
@@ -87,7 +88,10 @@ public class AlsaCardViewer extends JFrame
     buttonPanel.add (okButton);
     getContentPane().add (buttonPanel, BorderLayout.SOUTH);
     
-    //setSize(300,300);
+    URL iconURL = getClass().getResource ("/images/jalsaselector.png");
+    ImageIcon icon = new ImageIcon (iconURL);
+    setIconImage (icon.getImage());
+
     setLocationByPlatform (true);
     }
 
