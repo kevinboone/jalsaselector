@@ -1,6 +1,6 @@
 # jalsaselector
 
-Version 1.0.0
+Version 1.0.1
 
 ## What is this?
 
@@ -100,6 +100,11 @@ routinely used multiple monitors.
 Fonts are likely to be quite small, on high-definition screens. Sorry, but
 this isnt easy to fix in a Java Swing program -- not in a way that works
 on different Linux desktops, anyway.
+
+## Revisions
+
+1.0.1, September 2024, fixed incorrect card parsing on double-click  
+1.0.0, June 2024, first release
 
 ## Author and legal
 

@@ -141,6 +141,7 @@ public class Main
               JOptionPane.showMessageDialog (viewer, 
                 "Default set to " + cardName, 
                  Config.APP_NAME, JOptionPane.INFORMATION_MESSAGE);
+	      System.exit (0);
               }
             catch (Exception e)
               {
@@ -281,7 +282,7 @@ public class Main
 
     if (showVersion)
       {
-      System.out.println (Config.PROG_NAME  + " version 1.0.0");
+      System.out.println (Config.PROG_NAME  + " version 1.0.1");
       System.out.println ("Copyright (c)2024 Kevin Boone");
       System.out.println ("Distributed under the terms of the GPL, v.30");
       System.exit (0);

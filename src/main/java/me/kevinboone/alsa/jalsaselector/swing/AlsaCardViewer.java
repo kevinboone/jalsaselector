@@ -31,15 +31,23 @@ public class AlsaCardViewer extends JFrame
     getContentPane().add (listScrollPane, BorderLayout.CENTER);
 
     MouseListener mouseListener = new MouseAdapter() 
-       {
-       public void mouseClicked (MouseEvent e) 
-         {
-         if (e.getClickCount() == 2) 
-           {
-           String cardName = (String)list.getSelectedValue();
-           if (listener != null) listener.selected (cardName);
-           }
-         }
+      {
+      public void mouseClicked (MouseEvent e) 
+        {
+        if (e.getClickCount() == 2) 
+          {
+          String cardIdent = (String)list.getSelectedValue();
+          if (cardIdent != null)
+            {
+            if (listener != null) 
+              { 
+              String cardName = parseCardName (cardIdent);
+              if (cardName != null)
+                listener.selected (cardName);
+              }
+            }
+          }
+        }
       };
     list.addMouseListener (mouseListener);
 
